@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    android:orientation="vertical"
+    tools:context=".Color_Settings">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color Settings"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/Account_Settings"
+        />
+
+    <Button
+        android:id="@+id/Change_Text_Color_Button"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Change Text Color"
+        android:backgroundTint="@color/black"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/Change_Background_Color_Button"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="230dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Change Background Color"
+        android:backgroundTint="@color/black"
+        android:textSize="25dp"/>
+
+    <Button
+        android:id="@+id/Go_Back_Button"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/white"
+        android:textSize="45dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Second_Layer_Buttons"
+        android:id="@+id/First_Layer_Buttons"
+        android:gravity="center"
+        >
+
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Account"
+            android:textSize="14dp"
+            android:id="@+id/Account"
+            />
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Settings"
+            android:textSize="14dp"
+            android:id="@+id/Settings"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Go_Back_Button"
+        android:id="@+id/Second_Layer_Buttons"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    android:orientation="vertical"
+    tools:context=".Location">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bank Location"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/Location"
+        />
+
+    <EditText
+        android:id="@+id/Zip_Code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Location"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_my_location_24"
+        android:drawablePadding="20dp"
+        android:hint="Zip Code"
+        android:maxLength="5"
+        android:padding="20dp"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/findBank"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/Zip_Code"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Find Bank(s)"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/Go_Back_Button"
+            android:layout_width="411dp"
+            android:layout_height="137dp"
+            android:backgroundTint="@color/black"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

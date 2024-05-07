@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    tools:context=".Verification">
+
+    <TextView
+        android:id="@+id/vAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Verify Account"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vssnText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Social Security Number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/vSSN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="#30ffffff"
+            android:gravity="start|bottom"
+            android:hint="SSN"
+            android:inputType="numberPassword"
+            android:maxLength="9"
+            android:padding="10dp"
+            android:digits="0123456789"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/vpinText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Pin Number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/vpin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="195dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#30ffffff"
+        android:gravity="start|bottom"
+        android:hint="Enter Pin Number"
+        android:inputType="numberPassword"
+        android:drawableLeft="@drawable/baseline_numbers_24"
+        android:maxLength="4"
+        android:padding="10dp"
+        android:digits="0123456789"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vaccNumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:text="Account / Bank Number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/vaccNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="#30ffffff"
+        android:gravity="start|bottom"
+        android:hint="Enter Account / Bank Number"
+        android:inputType="number"
+        android:maxLength="17"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/baseline_numbers_24"
+        android:digits="0123456789"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Enter_Button"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/vaccNum"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:gravity="center"
+        android:text="Enter"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Second_Layer_Buttons"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/gbButton"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="Go Back"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/create_account"
+        />
+
+    <EditText
+        android:id="@+id/FullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_account"
+        android:background="#30ffffff"
+        android:layout_margin="18dp"
+        android:hint="Full Legal Name"
+        android:padding="20dp"
+        android:textColorHint="@color/black"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/UserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/FullName"
+        android:background="#30ffffff"
+        android:layout_margin="18dp"
+        android:hint="Email Address"
+        android:padding="20dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_lock_open_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserEmail"
+        android:background="#30ffffff"
+        android:layout_margin="18dp"
+        android:hint="Password"
+        android:padding="20dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_lock_open_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/ConfirmUserPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/UserPassword"
+        android:background="#30ffffff"
+        android:layout_margin="18dp"
+        android:hint="Confirm Password"
+        android:padding="20dp"
+        android:textColorHint="@color/black"
+        android:drawableLeft="@drawable/baseline_lock_open_24"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword"
+        />
+
+
+    <Button
+        android:id="@+id/Create_Button"
+        android:layout_width="249dp"
+        android:layout_height="81dp"
+        android:layout_below="@id/ConfirmUserPass"
+        android:layout_centerHorizontal="true"
+        android:text="Create Account"
+        android:textSize="20dp"
+        android:backgroundTint="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Other_Buttons"
+        android:gravity="center"
+        />
+
+
+</RelativeLayout>

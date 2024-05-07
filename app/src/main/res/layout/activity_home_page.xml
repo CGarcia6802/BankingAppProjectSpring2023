@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    android:orientation="vertical"
+    tools:context=".Home_Page">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home Page"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/Home_Page"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Second_Layer_Buttons"
+        android:id="@+id/First_Layer_Buttons"
+        android:gravity="center"
+        >
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Add Bank Account"
+            android:textSize="14dp"
+            android:id="@+id/Account"
+            />
+
+        <Button
+            android:id="@+id/Transaction_History"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="TXN History"
+            android:textSize="14dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Transfer"
+            android:textSize="14dp"
+            android:id="@+id/Transfer"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/First_Layer_Buttons"
+        android:id="@+id/Second_Layer_Buttons"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Settings"
+            android:textSize="14dp"
+            android:id="@+id/Settings"
+            />
+
+        <Button
+            android:id="@+id/Sign_Out"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Sign Out"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Third_Layer_Buttons"
+        android:gravity="center"
+        >
+
+
+        <ImageButton
+            android:id="@+id/Help_Me"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/help_me"
+            android:background="@null"/>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:id="@+id/Location"
+            android:src="@drawable/location"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:layout_margin="20dp"
+            android:id="@+id/Website_Link"
+            android:src="@drawable/website_link"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

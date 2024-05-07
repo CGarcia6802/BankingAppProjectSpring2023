@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    tools:context=".Help">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help Page"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/Help_Page"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Help_Page"
+        android:text="Help Center"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/Help_Center"
+        />
+
+    <Button
+        android:layout_below="@id/Help_Center"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:text="Call Now"
+        android:textSize="35dp"
+        android:layout_margin="18dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:id="@+id/Call_Now_Button"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Call_Now_Button"
+        android:text="Text Representative"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/Text_Representative"
+        />
+
+    <Button
+        android:id="@+id/Text_Now_Button"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/Text_Representative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="@color/black"
+        android:text="Text Now"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/Go_Back_Button"
+            android:layout_width="411dp"
+            android:layout_height="137dp"
+            android:backgroundTint="@color/black"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
